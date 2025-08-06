@@ -1,5 +1,7 @@
+'use client'
+
 import React from "react";
-import Card from "./Card";
+import WinnersCard from "./WinnersCard";
 
 interface CardData {
   imgsrc: string;
@@ -12,16 +14,20 @@ const cards: CardData[] = [
   { imgsrc: "/greenCardRobo.svg", alt: "Green Card Robo" },
 ];
 
-const AboutSection: React.FC = () => {
+const WinnerSection: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-5 md:px-0 my-16">
+    <section className="px-6 md:px-0 max-w-6xl mx-auto py-6 md:py-16">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-10 tracking-wide">
+        LAST EVENT TOP WARRIORS
+      </h2>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-center">
         {cards.map((card, index) => (
-          <Card key={index} imgsrc={card.imgsrc} />
+          <WinnersCard key={index} imgsrc={card.imgsrc} />
         ))}
       </div>
     </section>
   );
 };
 
-export default AboutSection;
+export default WinnerSection;
