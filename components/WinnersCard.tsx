@@ -4,9 +4,9 @@ interface CardProps {
   imgsrc: string;
 }
 
-const Card: React.FC<CardProps> = ({ imgsrc }) => {
+const WinnersCard: React.FC<CardProps> = ({ imgsrc }) => {
   return (
-    <div className="relative md:w-[370px] flex flex-col items-center rounded-[32px] border border-white/20 p-2 bg-transparent gap-3 z-10">
+    <div className="relative md:w-[370px] flex flex-col items-center rounded-[32px] border border-white/20 p-2 bg-transparent gap-3 z-10 transition-transform duration-500 ease-out hover:rotate-3 hover:scale-[1.03]">
       <div className="relative w-full">
         <img
           src={imgsrc}
@@ -16,11 +16,11 @@ const Card: React.FC<CardProps> = ({ imgsrc }) => {
 
         <div className="absolute bottom-4 left-4 right-4 bg-[#0B1D1C]/80 backdrop-blur-md border border-[#c9ec0680] rounded-[24px] p-4 flex items-center justify-between">
           <div className="flex flex-col text-white">
-            <p className="text-sm font-medium">Rarity Score:</p>
-            <p className="text-lg font-semibold">8.7/10</p>
+            <p className="text-sm font-medium">{"NAME"}</p>
+            <p className="text-lg font-semibold">{"POSITION 🔥"}</p>
           </div>
 
-          <div className="relative w-[40px] h-[40px] rounded-full bg-[#d3ed05] flex items-center justify-center">
+          <div className="relative w-[40px] h-[40px] rounded-full bg-lime-400 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -43,4 +43,4 @@ const Card: React.FC<CardProps> = ({ imgsrc }) => {
   );
 };
 
-export default Card;
+export default WinnersCard;
