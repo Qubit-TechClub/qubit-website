@@ -1,4 +1,3 @@
-import "./globals.css";
 import WinnerSection from "@/components/WinnerSection";
 import BenenfitSection from "@/components/BenenfitSection";
 import HeroSection from "@/components/HeroSection";

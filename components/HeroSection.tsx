@@ -2,18 +2,18 @@ import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative h-[115vh] md:min-h-[175vh] 2xl:min-h-[70vh] z-20">
+    <div className="relative  md:h-auto z-20 flex flex-col">
       <div className="absolute inset-0 z-10">
         <img
           src="https://framerusercontent.com/images/AMNoMN6TjEY2VvvBUrqVUv83y0.png"
           alt="Background"
-          className="h-full w-full object-cover object-center"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#08282D] via-[#1b371f] to-[#aaf318] opacity-90" />
       </div>
 
       <div
-        className="h-full absolute inset-0 z-10 pointer-events-none"
+        className="absolute inset-0 z-20 pointer-events-none"
         style={{
           backgroundSize: "142px 142px",
           backgroundImage:
@@ -21,33 +21,36 @@ const HeroSection: React.FC = () => {
         }}
       />
 
-      <div className="relative z-40 flex flex-col items-center text-center px-6 md:px-0 pt-28 md:pt-32">
-        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
-          <span className="text-[40px] md:text-6xl lg:text-9xl">
-            LEVEL UP YOUR
-          </span>
-          <br />
-          TECH GAME
-        </h1>
-        <p className="mt-6 text-sm md:text-xl text-gray-200 max-w-3xl">
-          Join our futuristic tech club where coding meets creativity. Compete,
-          collaborate, and conquer challenges as you unlock new skills and
-          achievements
-        </p>
-        <button className="mt-8 px-6 py-3 bg-lime-400 hover:bg-lime-500 text-black font-semibold rounded-lg shadow-lg transition duration-300">
-          Start Your Journey
-        </button>
+      <div className="relative z-40 flex flex-col items-center justify-start gap-10 px-4 sm:px-6">
+        <div className="text-center  mt-10">
+          <h1 className="text-white font-extrabold leading-tight">
+            <span className="inline-block text-[42px] sm:text-5xl md:text-7xl lg:text-9xl">
+              LEVEL UP YOUR
+            </span>
+            <span className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
+              TECH GAME 🔥
+            </span>
+          </h1>
+          <p className="mt-6 text-xs sm:text-base md:text-lg text-gray-200 max-w-3xl mx-auto">
+            Join our futuristic tech club where coding meets creativity. Compete,
+            collaborate, and conquer challenges as you unlock new skills and
+            achievements.
+          </p>
+          <button className="mt-8 px-6 py-3 bg-lime-400 hover:bg-lime-500 text-black font-semibold rounded-lg shadow-lg transition duration-300">
+            Start Your Journey
+          </button>
+        </div>
+
+        <div className="flex justify-center items-start md:mt-0">
+          <img
+            src="https://framerusercontent.com/images/PU3qayNkkTpSqPCq3jAcnOFmjU.svg"
+            alt="Main Visual"
+            className="w-[95%] sm:max-w-[450px] md:max-w-[600px] lg:max-w-[650px]"
+          />
+        </div>
       </div>
 
-      <div className="relative z-40 flex justify-center items-end md:items-center mt-12">
-        <img
-          src="https://framerusercontent.com/images/PU3qayNkkTpSqPCq3jAcnOFmjU.svg"
-          alt="Main Visual"
-          className="h-[40%] md:h-[80vh] lg:h-[90vh] md:w-auto"
-        />
-      </div>
-
-      <div className="absolute -bottom-1 w-full z-30">
+      <div className="absolute -bottom-5 md:-bottom-10 left-0 w-full z-30">
         <img src="/grassGrp.png" alt="Grass" className="w-full object-cover" />
       </div>
     </div>

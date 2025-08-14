@@ -1,12 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="absolute w-full bg-gradient-[#08282D]  md:opacity-80 px-6 py-4 z-50">
+    <nav className="relative w-full bg-[#082527] text-white px-6 py-4 z-50">
       <div
         className="h-full absolute inset-0 z-10 pointer-events-none"
         style={{
@@ -23,7 +24,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <ul className="hidden md:flex items-center space-x-8 text-gray-300 font-medium">
-          <li className="cursor-pointer hover:text-white transition">Events</li>
+          <Link href={'/events'}><li className="cursor-pointer hover:text-white transition">Events</li></Link>
           <li className="cursor-pointer hover:text-white transition">About</li>
           <li className="cursor-pointer hover:text-white transition">
             Contact
