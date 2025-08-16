@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Qubit - Club Events",
-  description: "Qubit Tech Club events",
+  title: "Qubit - Sign Up",
+  description: "Sign Up now to level up your game",
 };
 
 export default function RootLayout({
