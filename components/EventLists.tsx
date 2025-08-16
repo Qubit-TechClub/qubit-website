@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import EventCard from "./EventCard";
 
 const EventLists: React.FC = () => {
-  const [activeTab, setActiveTab] = useState("Upcoming");
+  const [activeTab, setActiveTab] = useState("Live");
 
-  const tabs = ["Past", "Upcoming", "Live"];
+  const tabs = ["Live","Upcoming","Past" ];
 
   return (
     <div className="w-full flex flex-col items-center text-center bg-transparent px-6 md:px-0 max-w-6xl mx-auto py-6 md:py-16">
@@ -31,7 +31,10 @@ const EventLists: React.FC = () => {
 
       <div className="flex flex-col gap-12 w-full">
         {Array.from({ length: 5 }).map((_, index) => (
-          <EventCard key={index} />
+          <div key={index}>
+          <EventCard  index={index} />
+          <hr className="mt-7" />
+          </div>
         ))}
       </div>
     </div>
