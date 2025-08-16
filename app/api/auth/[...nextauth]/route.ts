@@ -3,6 +3,11 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 
+interface Credentials {
+  email: string;
+  password: string;
+}
+
 const handler = NextAuth({
   providers: [
     CredentialsProvider({
@@ -11,7 +16,8 @@ const handler = NextAuth({
         email: { label: "Email", type: "text" },
         password: { label: "Password", type: "password" },
       },
-      async authorize(credentials: any) {
+      async authorize(credentials: Credentials | undefined) {
+        if (!credentials?.email || !credentials?.password) return null;
         const user = await prisma.user.findUnique({
           where: { email: credentials.email },
         });

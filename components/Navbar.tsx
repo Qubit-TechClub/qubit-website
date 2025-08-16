@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Menu, X, LogOut, User } from "lucide-react";
 import Link from "next/link";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import {
   Popover,
   PopoverContent,

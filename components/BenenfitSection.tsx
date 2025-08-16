@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const CardCollectible: React.FC = () => (
@@ -13,7 +14,7 @@ const CardCollectible: React.FC = () => (
       </p>
     </div>
     <div className="overflow-hidden rounded-[20px]">
-      <img
+      <Image
         src="https://framerusercontent.com/images/X39pZLCdkVaalzkGwyfd2dy76M.png"
         alt="Special Attention and Guidance"
         className="w-full h-[350px] object-cover object-top"
@@ -35,7 +36,7 @@ const CardStaking: React.FC = () => (
       </p>
     </div>
     <div className="overflow-hidden rounded-[20px]">
-      <img
+      <Image
         src="https://framerusercontent.com/images/EEfzIxKu8ijHqN0QXlbXIfUowI.png"
         alt="Special Mentorship and Classes"
         className="w-full h-[350px] md:h-[600px] object-cover"
@@ -57,7 +58,7 @@ const CardCommunity: React.FC = () => (
       </p>
     </div>
     <div className="overflow-hidden rounded-[20px]">
-      <img
+      <Image
         src="https://framerusercontent.com/images/LJOCU2sfuw7vCFwhM0QKhiuOjYc.png"
         alt="Personalised Guest Lectures"
         className="w-full h-[350px] object-cover object-top"

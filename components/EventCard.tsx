@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface EventCardProps {
@@ -19,7 +20,7 @@ const EventCard: React.FC<EventCardProps> = ({ index }) => {
         }`}
       >
         <div className="rounded-xl overflow-hidden shadow-lg">
-          <img
+          <Image
             src="https://framerusercontent.com/images/Yjm7Rb0Vjyfy5Mu4r8Yatx1Yyr4.png?scale-down-to=2048"
             className="w-[100%] h-full object-contain"
             alt="Event"

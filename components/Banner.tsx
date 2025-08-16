@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const Banner: React.FC = () => {
@@ -23,7 +24,7 @@ const Banner: React.FC = () => {
         </div>
 
         <div className="hidden flex-1 mt-12 md:mt-0 md:flex justify-center absolute md:right-32">
-          <img
+          <Image 
             src="https://framerusercontent.com/images/bx5In8ji0dlI6j8dUFfjVlV513Y.png?scale-down-to=1024"
             alt="ninja"
             className="h-64 md:h-96 object-contain drop-shadow-lg"
