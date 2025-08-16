@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import React from "react";
 
 interface CounterCardProps {
@@ -10,7 +11,7 @@ interface CounterCardProps {
 
 const CounterCard: React.FC<CounterCardProps> = ({ value, suffix, label }) => (
   <div className="relative w-[150px] md:w-[250px] h-[150px] md:h-[250px] flex flex-col items-center justify-center text-white">
-    <img
+    <Image
       src="https://framerusercontent.com/images/rb9407KvCZGxSE7FSnZlOW1gUs.svg"
       alt="Background Shape"
       className="absolute inset-0 w-full h-full object-cover"
@@ -53,12 +54,12 @@ const SummarySection: React.FC = () => {
         <CounterCard value={1000} suffix="+" label="XP Points Earned" />
 
         <div className="w-full flex justify-center items-center absolute h-full z-40">
-          <img src="/blueRobo.svg" alt="Blue Robot" className="h-[130%]" />
+          <Image src="/blueRobo.svg" alt="Blue Robot" className="h-[130%]" />
         </div>
       </div>
 
       <div className="hidden lg:block lg:absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 animate-spin [animation-duration:20s]">
-        <img
+        <Image
           src="https://framerusercontent.com/images/rb4X1a8zhi8WTVRpzCRKoBZ3Tk.png"
           alt="Decor"
           className="w-[650px] h-[650px]"
