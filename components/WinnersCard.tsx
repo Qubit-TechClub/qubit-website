@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 interface CardProps {
@@ -9,7 +8,7 @@ const WinnersCard: React.FC<CardProps> = ({ imgsrc }) => {
   return (
     <div className="relative md:w-[370px] flex flex-col items-center rounded-[32px] border border-white/20 p-2 bg-transparent gap-3 z-10 transition-transform duration-500 ease-out hover:rotate-3 hover:scale-[1.03]">
       <div className="relative w-full">
-        <Image
+        <img
           src={imgsrc}
           alt="Robot"
           className="w-full h-auto rounded-[48px] object-cover"

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 const EventHeroSection: React.FC = () => {
@@ -28,17 +27,17 @@ const EventHeroSection: React.FC = () => {
         </p>
 
         <div className="flex justify-center items-center md:mt-10 gap-1 relative">
-          <Image
+          <img
             src="https://framerusercontent.com/images/bx5In8ji0dlI6j8dUFfjVlV513Y.png"
             alt="Character 1"
             className="max-h-[250px] sm:max-h-[400px] object-contain -mr-32 -mt-40 md:-mr-22 md:mt-0"
           />
-          <Image
+          <img
             src="https://framerusercontent.com/images/UKaiAYNZSDroF00ld4ilapV1YM.png?scale-down-to=2048"
             alt="Character 2"
             className="max-h-[320px] sm:max-h-[450px] object-contain mt-64 z-50 md:mt-0"
           />
-          <Image
+          <img
             src="https://framerusercontent.com/images/tKw5Dm7Ruux0rvPf9KCjmMrcH74.png?scale-down-to=1024"
             alt="Character 3"
             className="max-h-[250px] sm:max-h-[400px] object-contain -ml-32 -mt-40 md:-ml-22 md:mt-0"
@@ -47,7 +46,7 @@ const EventHeroSection: React.FC = () => {
       </div>
 
       <div className="absolute bottom-0 md:-bottom-6 left-0 w-full z-10">
-        <Image
+        <img
           src="/grassGrp.png"
           alt="Grass"
           className="w-full h-auto object-cover"

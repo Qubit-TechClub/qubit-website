@@ -1,6 +1,5 @@
 "use client";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -8,7 +7,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-10">
         <div className="space-y-5">
           <div className="flex items-center gap-2">
-            <Image src="/logo.svg" alt="Qubit Logo" className="w-6 h-6" />
+            <img src="/logo.svg" alt="Qubit Logo" className="w-6 h-6" />
             <h2 className="text-xl font-extrabold text-white">QUBIT</h2>
           </div>
           <p className="text-sm">
