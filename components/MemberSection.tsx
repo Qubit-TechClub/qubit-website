@@ -12,37 +12,37 @@ interface CardData {
 
 const cards: CardData[] = [
   { 
-    imgsrc: "https://framerusercontent.com/images/3UoxEzinM0DOo41L6alyidNZ2HI.png?scale-down-to=1024", 
+    imgsrc: "/greenNinja.png", 
     alt: "Shoyeb Ansari", 
     name: "Shoyeb Ansari", 
     role: "President & Tech Enthusiast" 
   },
   { 
-    imgsrc: "https://framerusercontent.com/images/JXwPfm1cWuBEaalb5Hf01Pxs1s.png?scale-down-to=1024", 
+    imgsrc: "/yellowNinjaCard.png", 
     alt: "Aman Raj Gupta", 
     name: "Aman Raj Gupta", 
     role: "Full Stack Developer" 
   },
   { 
-    imgsrc: "https://framerusercontent.com/images/gSL1SD0ZiFzDf743zursNEjBbA0.png?scale-down-to=1024", 
+    imgsrc: "/yellowCardRobo.png", 
     alt: "Saiyam Kumar", 
     name: "Saiyam Kumar", 
     role: "Frontend Developer" 
   },
   { 
-    imgsrc: "https://framerusercontent.com/images/ctIccYk4RHqHazQhrbY02jIjTU4.png?scale-down-to=1024", 
+    imgsrc: "/yellowMiniCardRobo.png", 
     alt: "Rohit Makani", 
     name: "Rohit Makani", 
     role: "Data Analyst & ML" 
   },
   { 
-    imgsrc: "https://framerusercontent.com/images/RucuVRxi74jc3NfBOk3uits2vGA.png?scale-down-to=1024", 
+    imgsrc: "/orangeCardRobo.png", 
     alt: "Jivan Jamadar", 
     name: "Jivan Jamadar", 
     role: "Open Source Enthusiast" 
   },
   { 
-    imgsrc: "https://framerusercontent.com/images/GPL9wq5xw8Zsms1fZnE5sACmA.png?scale-down-to=1024", 
+    imgsrc: "/futureRobo.png", 
     alt: "Extra Member", 
     name: "Maybe You", 
     role: "Compete & Be Here" 

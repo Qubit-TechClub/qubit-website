@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
-import Image from "next/image";
 
 const SignUpForm = () => {
   const [name, setName] = useState("");
@@ -94,8 +93,8 @@ const SignUpForm = () => {
         </div>
 
         <div className="hidden md:flex items-start justify-center bg-gradient-to-br from-green-500/20 to-emerald-700/20 p-6">
-          <Image
-            src="https://framerusercontent.com/images/OoBef7HplXLeVNtVPPtLjJRgWs4.png?scale-down-to=2048"
+          <img
+            src="/authImage.png"
             alt="Signup Illustration"
             className="w-[70%] max-w-md drop-shadow-2xl"
           />

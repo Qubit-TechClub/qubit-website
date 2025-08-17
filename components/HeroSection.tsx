@@ -1,12 +1,11 @@
-import Image from "next/image";
 import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
     <div className="relative  md:h-auto z-20 flex flex-col">
       <div className="absolute inset-0 z-10">
-        <Image
-          src="https://framerusercontent.com/images/AMNoMN6TjEY2VvvBUrqVUv83y0.png"
+        <img
+          src="/earthBg.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
@@ -43,8 +42,8 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="flex justify-center items-start md:mt-0">
-          <Image
-            src="https://framerusercontent.com/images/PU3qayNkkTpSqPCq3jAcnOFmjU.svg"
+          <img
+            src="/heroRobo.svg"
             alt="Main Visual"
             className="w-[95%] sm:max-w-[450px] md:max-w-[600px] lg:max-w-[650px]"
           />
@@ -52,7 +51,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       <div className="absolute -bottom-5 md:-bottom-10 left-0 w-full z-30">
-        <Image src="/grassGrp.png" alt="Grass" className="w-full object-cover" />
+        <img  src="/grassGrp.png" alt="Grass" className="w-full object-cover" />
       </div>
     </div>
   );
