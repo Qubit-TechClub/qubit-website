@@ -20,6 +20,7 @@ model User {
   email          String     @unique
   password       String
   name           String
+  about          String?
   image          String?
   gender         String?
   role           RoleName   @default(MEMBER)

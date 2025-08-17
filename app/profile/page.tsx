@@ -1,8 +1,10 @@
+import { viewProfile } from "@/actions/user";
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";
 
 
-export default function Home() {
+export default async function Home() {
+   const user = await viewProfile();
   return (
     <div
       className="bg-[#082527] text-white overflow-hidden"
@@ -13,7 +15,7 @@ export default function Home() {
       }}
     >
       <Navbar/>
-      <Profile/>
+      <Profile user={user} />
     </div>
   );
 }
